@@ -9,10 +9,10 @@ gio = int(input("Nhập giờ: "))
 phut = int(input("Nhập phút: "))
 giay = int(input("Nhập giây: "))
 
-if 0 <= gio <= 2 and 0<= phut <= 59 and 0 <= giay <= 59:
+if 0 <= gio <= 24 and 0<= phut <= 59 and 0 <= giay <= 59:
     print("Thời gian hợp lệ")
 else:
-    if gio < 1 or gio > 24:
+    if 0 < gio < 1 or gio > 24:
         print("Giờ không hợp lệ")
     if phut < 0 or phut > 59:
         print("Phút không hợp lệ")
